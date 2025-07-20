@@ -1,0 +1,113 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* base rule */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+html{
+    font-size: 62.5%;
+    /* 100% = 16px */
+    /* 62.5% = 10px */
+    /* 1rem = 10px */
+}
+
+h1,h2{
+    font-weight: bold;
+    color: var(--dark-01)
+}
+
+h3{
+    font-weight: 600;
+}
+
+h4{
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+li, a{
+    color: var(--dark-01);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+/* theme */
+
+:root{
+    --white: #ffffff;
+    --dark-01: rgba(0, 0, 0, 0.87);
+    --dark-02: #18191F;
+    --dark-03: #6C6C6C;
+    --dark-04: #D9DBE1;
+    --bg-secondary: #0A0826;
+    --btn-primary: #E02C6D;
+    --margin-sec: 13rem;
+}
+
+
+/* layout */
+
+.container{
+    margin: 0 16.5rem;
+}
+
+/* module / reuseable */
+
+.btn{
+    background-color: var(--btn-primary);
+    color: var(--white);
+    font-weight: bold;
+    padding: 1rem 2.4rem;
+}
+
+/* state */
+
+/***** header Section *****/ 
+
+.section-header{
+    margin-block: 3rem 7rem;
+}
+
+.section-header--nav{
+    margin-inline: var(--margin-sec);
+    display: grid;
+    grid-template-columns: 5fr 4fr 1fr;
+    align-items: center;
+}
+
+.nav-logo--brand{
+    font-size: 2.4rem;
+}
+
+.section-nav--menu .fa-bars{
+    display: none;
+}
+
+.nav-menu--items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+.section-nav--cart{
+    font-size: 1.7rem;
+    color: var(--dark-01);
+    margin-left: -3rem;
+}
+
+/***** End header Section *****/
