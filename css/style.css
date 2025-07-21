@@ -9,6 +9,8 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
 }
 
 html{
@@ -45,6 +47,10 @@ li, a{
     font-weight: 600;
 }
 
+p{
+    font-size: 1.7rem;
+    color: var(--dark-03);
+}
 
 /* theme */
 
@@ -70,9 +76,14 @@ li, a{
 
 .btn{
     background-color: var(--btn-primary);
+    border: none;
     color: var(--white);
     font-weight: bold;
-    padding: 1rem 2.4rem;
+    padding: 1.4rem 2.4rem;
+}
+
+.btn i{
+    margin-left: 1rem;
 }
 
 /* state */
@@ -86,7 +97,7 @@ li, a{
 }
 
 .section-header--nav{
-    margin-inline: var(--margin-sec);
+    margin-inline: 13rem;
     display: grid;
     grid-template-columns: 5fr 4fr 1fr;
     align-items: center;
@@ -104,12 +115,12 @@ li, a{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
+    gap: 2rem;
 }
 
 .section-nav--cart{
     font-size: 1.7rem;
     color: var(--dark-01);
-    margin-left: -3rem;
 }
 
 /***** navbar media query Section *****/ 
@@ -183,6 +194,49 @@ li, a{
 /***** End navbar Section *****/
 
 /***** banner Section *****/ 
+
+.section-header--banner{
+    margin-block: 6.9rem 10rem;
+    margin-inline: 13rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    gap: 10rem;
+}
+
+.banner-left--heading{
+    font-size: 5.2rem;
+}
+
+.banner-left--details{
+    margin-block: 1.6rem 3.5rem;
+    font-weight: 600;
+}
+
+.banner-left--btn{
+    border-radius: 4.1rem;
+    -webkit-border-radius: 4.1rem;
+    -moz-border-radius: 4.1rem;
+    -ms-border-radius: 4.1rem;
+    -o-border-radius: 4.1rem;
+}
+
+.section-banner--right{
+    padding-block: 10rem;
+    /* background */
+    background-image: url('/images/Circle_design.svg');
+    background-repeat: no-repeat;
+    background-size: 45rem 45rem;
+    background-position:  9.2rem 5rem;
+}
+
+.banner-right--image{
+    width: 65%;
+    justify-self: center;
+}
+.banner-right--image img{
+    width: 100%;
+}
 
 
 
