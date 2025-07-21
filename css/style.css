@@ -79,6 +79,8 @@ li, a{
 
 /***** header Section *****/ 
 
+/***** navbar Section *****/ 
+
 .section-header{
     margin-block: 3rem 7rem;
 }
@@ -109,5 +111,82 @@ li, a{
     color: var(--dark-01);
     margin-left: -3rem;
 }
+
+/***** navbar media query Section *****/ 
+
+/* for tablet */
+@media screen and (max-width: 992px) {
+
+    .section-header--nav{
+        margin-inline: 5rem;
+        grid-template-columns: 1fr 3fr 1fr;
+        place-items: center;
+    }
+
+    .section-nav--menu{
+        order: -1;
+    }
+    
+    .section-nav--cart{
+        font-weight: 300;
+        font-size: 2.4rem;
+    }
+
+    .section-nav--menu .fa-bars{
+        display: initial;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    .section-nav--menu{
+        position: relative;
+    }
+
+    .nav-menu--items{
+        display: none;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .section-nav--menu .fa-bars:hover ~ .nav-menu--items{
+        position: absolute;
+        display: grid;
+        top: 4rem;
+        left: -0.4rem;
+    }
+}
+
+/* for mobile */
+@media screen and (max-width: 640px) {
+    
+    .section-header--nav{
+        margin-inline: 2rem;
+    }
+
+    .section-nav--logo h2,
+    .section-nav--menu .fa-bars,
+    .section-nav--cart{
+        font-size: 1.8rem;
+    }
+
+    .nav-menu--items{
+        gap: 0.3rem;
+    }
+
+    .nav-menu--item a{
+        font-size: 1.3rem;
+    }
+}
+
+/***** End navbar media query Section *****/
+
+/***** End navbar Section *****/
+
+/***** banner Section *****/ 
+
+
+
+/***** End banner Section *****/
+
 
 /***** End header Section *****/
