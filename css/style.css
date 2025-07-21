@@ -231,7 +231,7 @@ p{
 .section-banner--right{
     margin-block: 1rem;
     /* background */
-    background-image: url('/images/Circle_design.svg');
+    background-image: url('../images/Circle_design.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
