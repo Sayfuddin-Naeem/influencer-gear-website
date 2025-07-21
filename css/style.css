@@ -43,7 +43,7 @@ a{
 }
 li, a{
     color: var(--dark-01);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -82,6 +82,13 @@ p{
     padding: 1.4rem 2.4rem;
 }
 
+/* for mobile */
+@media screen and (max-width: 640px) {
+    .btn{
+        font-weight: 500;
+    }
+}
+
 .btn i{
     margin-left: 1rem;
 }
@@ -99,7 +106,7 @@ p{
 .section-header--nav{
     margin-inline: 13rem;
     display: grid;
-    grid-template-columns: 5fr 4fr 1fr;
+    grid-template-columns: 4fr 4fr 0.2fr;
     align-items: center;
 }
 
@@ -115,7 +122,7 @@ p{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .section-nav--cart{
@@ -171,7 +178,7 @@ p{
 @media screen and (max-width: 640px) {
     
     .section-header--nav{
-        margin-inline: 2rem;
+        margin-inline: 1.6rem;
     }
 
     .section-nav--logo h2,
@@ -222,12 +229,12 @@ p{
 }
 
 .section-banner--right{
-    padding-block: 10rem;
+    margin-block: 1rem;
     /* background */
     background-image: url('/images/Circle_design.svg');
     background-repeat: no-repeat;
-    background-size: 45rem 45rem;
-    background-position:  9.2rem 5rem;
+    background-size: contain;
+    background-position: center center;
 }
 
 .banner-right--image{
@@ -238,6 +245,43 @@ p{
     width: 100%;
 }
 
+/***** banner media query Section *****/ 
+
+/* for tablet */
+@media screen and (max-width: 992px) {
+    .section-header--banner{
+        margin-inline: 10rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .section-banner--left{
+        text-align: center;
+        order: 2;
+    }
+}
+
+/* for mobile */
+@media screen and (max-width: 640px) {
+    .section-header--banner{
+        margin-inline: 1.6rem;
+    }
+
+    .banner-left--heading{
+        font-size: 2.8rem;
+    }
+
+    .banner-left--details{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .banner-right--image{
+        width: 70%;
+    }
+}
+
+/***** End banner media query Section *****/
 
 
 /***** End banner Section *****/
