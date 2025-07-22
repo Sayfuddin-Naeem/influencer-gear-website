@@ -80,6 +80,7 @@ p{
     color: var(--white);
     font-weight: bold;
     padding: 1.4rem 2.4rem;
+    cursor: pointer;
 }
 
 /* for mobile */
@@ -166,7 +167,7 @@ p{
         gap: 1rem;
     }
     
-    .section-nav--menu .fa-bars:hover ~ .nav-menu--items{
+    .section-nav--menu:hover .fa-bars ~ .nav-menu--items{
         position: absolute;
         display: grid;
         top: 4rem;
@@ -283,8 +284,74 @@ p{
 
 /***** End banner media query Section *****/
 
-
 /***** End banner Section *****/
 
-
 /***** End header Section *****/
+
+/***** main Section *****/ 
+
+
+/***** sponsors Section *****/ 
+
+.section-main--sponsors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6.1rem;
+    margin-bottom: 10rem;
+    padding-block: 3rem;
+
+    border-top: 0.1rem solid transparent;
+    border-bottom: 0.2rem solid transparent;
+    border-image: linear-gradient(
+                    to right,
+                    rgba(192, 204, 218, 0.1),
+                    rgba(192, 204, 218, 0.6),
+                    rgba(192, 204, 218, 0.1)
+                );
+    border-image-slice: 1;
+}
+
+.section-sponsors--logos img{
+    width: 100%;
+}
+
+
+/***** sponsors media query Section *****/ 
+
+/* for tablet  */
+@media screen and (max-width: 992px) {
+    main.container{
+        margin: 0 8rem;
+    }
+
+    .section-main--sponsors{
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main.container{
+        margin: 0 4.2rem;
+    }
+
+    .section-main--sponsors{
+        border: none;
+        gap: 3rem;
+    }
+
+    .section-sponsors--logos{
+        flex: 0 0 calc(25% - 2.25rem);
+    }
+    
+}
+
+/***** End sponsors media query Section *****/
+
+
+
+/***** End sponsors Section *****/
+
+
+/***** End main Section *****/
+
