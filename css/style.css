@@ -325,7 +325,7 @@ p{
 /* for tablet  */
 @media screen and (max-width: 992px) {
     .section-main--sponsors.container{
-        margin: 0 8rem;
+        margin-inline: 8rem;
     }
 
     .section-main--sponsors{
@@ -335,7 +335,7 @@ p{
 
 @media screen and (max-width: 640px) {
     .section-main--sponsors.container{
-        margin: 0 4.2rem;
+        margin-inline: 4.2rem;
     }
 
     .section-main--sponsors{
@@ -357,7 +357,6 @@ p{
 /***** collection Section *****/ 
 
 .section-main--collection{
-    margin-bottom: 10rem;
     position: relative;
 }
 
@@ -443,7 +442,7 @@ p{
 
 /* for tablet */
 @media screen and (max-width: 992px) {
-    
+
     .section-main--collection.container{
         margin: 0 2rem;
     }
@@ -451,6 +450,10 @@ p{
     .section-collection--content{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+
+    .section-collection--btn{
+        right: 5rem;
     }
 }
 
@@ -469,8 +472,62 @@ p{
 
 /***** End collection media query Section *****/
 
-
 /***** End collection Section *****/
+
+/***** features Section *****/ 
+
+.section-main--features{
+    margin-block: 20rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.section-features--image img{
+    width: 100%;
+}
+
+.section-features--heading{
+    font-size: 2.8rem;
+}
+
+.section-features--details{
+    margin-block: 1.6rem 3.2rem;
+}
+
+/***** features media query Section *****/ 
+
+/* for tablet */
+@media screen and (max-width: 992px) {
+
+    .section-main--features.container{
+        margin-inline: 8rem;
+    }
+
+    .section-main--features{
+        margin-block: 15rem 10rem;
+        grid-template-columns: 1fr;
+        gap: 8rem;
+    }
+
+    .section-features--content{
+        order: -1;
+        text-align: center;
+    }
+}
+
+/* for mobile */
+@media screen and (max-width: 640px) {
+    .section-main--features.container{
+        margin-inline: 3rem;
+    }
+}
+
+/***** End features media query Section *****/
+
+
+/***** End features Section *****/
 
 
 /***** End main Section *****/
