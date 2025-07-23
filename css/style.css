@@ -532,3 +532,54 @@ p{
 
 /***** End main Section *****/
 
+/***** footer Section *****/ 
+
+.section-footer{
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    padding-block: 5rem;
+}
+
+.section-footer--content{
+    text-align: center;
+}
+
+.section-footer--content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.5rem;
+}
+
+.section-footer--heading{
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+.section-footer--copyright{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--dark-04);
+}
+
+.section-footer--social-media{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-social-media--item{
+    margin-top: 1.7rem;
+    width: 3.2rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22213C;
+    color: var(--white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/***** End footer Section *****/
